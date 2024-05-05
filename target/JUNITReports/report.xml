@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="31.132" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="About Section for the web" name="Verify the About Section" time="9.388">
+<system-out><![CDATA[
+Given User open the url.....................................................passed
+And User login into page....................................................passed
+Then user clicks on the About section.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test google search Functionality" name="Validate google search is working" time="8.262">
+<system-out><![CDATA[
+Given Browser is open.......................................................passed
+And user is on google search................................................passed
+When user enters a text in search box.......................................passed
+And hits enter..............................................................passed
+Then user is navigated to search results....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login functionality" name="Check login is successful with valid credentials" time="0.015">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.navigate()&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.navigate()" because "this.driver" is null
+	at StepDefinitions.LoginSteps_PF.user_is_on_login_page(LoginSteps_PF.java:37)
+	at ✽.user is on login page(file:///C:/Users/RADHA/eclipse-April/SeleniumCucumberWithPageFactory/src/test/resources/Features/login.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on login page.................................................failed
+When user enters username and password......................................skipped
+And clicks on login button..................................................skipped
+Then user is navigated to the home page.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login_POM functionality" name="Check login is successfull with valid credentials - Example #1.1" time="6.426">
+<system-out><![CDATA[
+Given browser is open.......................................................passed
+And user is on login page...................................................passed
+When user enters standard_user and secret_sauce.............................passed
+And user clicks on login....................................................passed
+Then user is navigated to the home page.....................................passed
+Then user clicks logout.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login_POM functionality" name="Check login is successfull with valid credentials - Example #1.2" time="6.783">
+<system-out><![CDATA[
+Given browser is open.......................................................passed
+And user is on login page...................................................passed
+When user enters problem_user and secret_sauce..............................passed
+And user clicks on login....................................................passed
+Then user is navigated to the home page.....................................passed
+Then user clicks logout.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
